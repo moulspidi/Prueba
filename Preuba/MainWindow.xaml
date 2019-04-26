@@ -1,0 +1,43 @@
+﻿<Window x:Class="Preuba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Preuba"
+        mc:Ignorable="d"
+        Title="Prueba" Height="562.5" Width="348.5" Loaded="Window_Loaded">
+    <Grid HorizontalAlignment="Left" Height="531" VerticalAlignment="Top" Width="342">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FFB89F31" Offset="0.703"/>
+                <GradientStop Color="#FFA6B420" Offset="0.393"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="340" Margin="21,128,0,0" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.396"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.743"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="255,92,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click" RenderTransformOrigin="0.5,0.5" Height="27" Background="#FF59760C">
+            <Button.BindingGroup>
+                <BindingGroup/>
+            </Button.BindingGroup>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.432"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="22" Margin="21,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="Textbox1_TextChanged"/>
+        <Label Content="Prueba" HorizontalAlignment="Left" Margin="126,10,0,0" VerticalAlignment="Top" Width="106" FontSize="22" FontFamily="Adobe Fan Heiti Std B" FontWeight="Bold"/>
+    </Grid>
+</Window>
